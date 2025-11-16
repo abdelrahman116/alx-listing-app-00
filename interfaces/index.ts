@@ -1,14 +1,18 @@
-interface CardProps {
-  imageURL: string;
-  catagory: string[];
-  title: string;
-  location: string;
-  rate: number;
-  bedNum: number;
-  showerNum: number;
-  capacity: number;
+export interface PropertyProps {
+  name: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
+  rating: number;
+  category: string[];
   price: number;
-}
-interface ButtonProps {
-  title: string;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount: string;
 }
